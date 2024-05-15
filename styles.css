@@ -1,0 +1,86 @@
+
+
+h1 a {
+    text-decoration: none;
+    color: #333;
+    padding: .15em;
+}
+
+header {
+    background-color: thistle;
+}
+
+footer {
+    margin-left: 20px;
+}
+
+main {
+    margin-left: 20px;
+}
+
+.navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+    text-align: left; 
+}
+
+.left-nav {
+    display: flex;
+    align-items: left;
+}
+
+.left-nav nav {
+    margin-left: 20px; /* Add space between Rachel's Zoo and the navigation links */
+}
+
+.left-nav nav span {
+    margin-right: 20px;
+}
+
+.left-nav nav span a {
+    text-decoration: none;
+    color: #333;
+}
+
+.left-nav nav span a:hover {
+    color: #666;
+}
+
+.left-nav .right-nav a:hover {
+    color: #666;
+}
+
+.adoptee_photos{
+    max-width: 200px; /* Adjust the maximum width as needed */
+    max-height: 200px; /* Adjust the maximum height as needed */
+    
+    /* Maintain the aspect ratio */
+    width: auto;
+    height: auto;
+}
+
+/* CSS Stylesheet */
+.data-table {
+    border-collapse: collapse; /* Collapse borders into a single border */
+}
+
+.data-table td {
+    border: 1px solid #dddddd; /* Border style for table cells */
+    padding: 8px; /* Padding inside table cells */
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 0px;
+    max-height: 500px;
+    }
+    
+    .div1 { grid-area: 3 / 2 / 20 / 3; } /*photo*/
+    .div2 { grid-area: 3 / 3 / 20 / 3; } /*name*/
+    .div3 { grid-area: 3 / 4 / 20 / 9; } /*description*/
+    .div4 { grid-area: 5 / 3 / 20 / 3; } /*days in shelter*/
